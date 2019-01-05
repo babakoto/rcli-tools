@@ -1,14 +1,42 @@
 #!/usr/bin/env node
-let fs = require('fs')
-const [,, ... args]=process.argv
-    fs.open(`${args}.js`, 'w', function (err, file) {
-        if (err) throw err;
-      });
-      fs.open(`${args}.css`, 'w', function (err, file) {
-        if (err) throw err;
-      });
-      fs.open(`index.js`, 'w', function (err, file) {
-        if (err) throw err;
-      });
-      console.log('Component created!');
+const fs = require('fs')
+const fse = require('fs-extra');
 
+const [,, ... args]=process.argv
+
+let template = 
+`
+import React, { Component } from 'react'
+
+class ${args} extends Component {
+  render() {
+    return (
+      <div>
+        
+      </div>
+    )
+  }
+}
+
+export default ${args}
+`
+
+let exportFile = `export {default} from './${args}'`
+fse.outputFile(`src/${args}/${args}.js`,template, err => {
+    if(err) {
+      console.log(err);
+    }
+  })
+
+  fse.outputFile(`src/${args}/${args}.css`,'', err => {
+    if(err) {
+      console.log(err);
+    }
+  })
+
+  fse.outputFile(`src/${args}/index.js`,exportFile, err => {
+    if(err) {
+      console.log(err);
+    }
+  })
+  console.log(`${args} created !!!`)

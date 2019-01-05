@@ -18,5 +18,8 @@
   "homepage": "https://github.com/babakoto/rcli#readme",
   "bin": {
     "rcli": "./rcli.js"
+  },
+  "dependencies": {
+    "fs-extra": "^7.0.1"
   }
 }
