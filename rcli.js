@@ -3,7 +3,6 @@ const fs = require('fs')
 const fse = require('fs-extra');
 
 const [,, ... args]=process.argv
-
 let template = 
 `
 import React, { Component } from 'react'
@@ -23,21 +22,21 @@ export default ${args}
 `
 
 let exportFile = `export {default} from './${args}'`
-fse.outputFile(`src/Components/${args}/${args}.js`,template, err => {
+fse.outputFile(`src/${args[0]}/${args[1]}/${args[1]}.js`,template, err => {
     if(err) {
       console.log(err);
     }
   })
 
-  fse.outputFile(`src/Components/${args}/${args}.css`,' ', err => {
+  fse.outputFile(`src/${args[0]}/${args[1]}/${args[1]}.css`,' ', err => {
     if(err) {
       console.log(err);
     }
   })
 
-  fse.outputFile(`src/Components/${args}/index.js`,exportFile, err => {
+  fse.outputFile(`src/${args[0]}/${args[1]}/index.js`,exportFile, err => {
     if(err) {
       console.log(err);
     }
   })
-  console.log(`${args} created !!!`)
+  console.log(`${args[1]} created !!!`)

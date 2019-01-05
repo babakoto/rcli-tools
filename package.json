@@ -1,6 +1,6 @@
 {
-  "name": "rcli",
-  "version": "1.0.0",
+  "name": "rcli-tools",
+  "version": "1.0.1",
   "description": "create component react ",
   "main": "rcli.js",
   "scripts": {
