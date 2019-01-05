@@ -1,0 +1,22 @@
+{
+  "name": "rcli",
+  "version": "1.0.0",
+  "description": "create component react ",
+  "main": "rcli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babakoto/rcli.git"
+  },
+  "author": "Andriamiandrisoa Tokiniaina Eddy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babakoto/rcli/issues"
+  },
+  "homepage": "https://github.com/babakoto/rcli#readme",
+  "bin": {
+    "rcli": "./rcli.js"
+  }
+}
