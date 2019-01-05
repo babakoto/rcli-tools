@@ -7,6 +7,7 @@ const [,, ... args]=process.argv
 let template = 
 `
 import React, { Component } from 'react'
+import './${args}.css'
 
 class ${args} extends Component {
   render() {
@@ -22,19 +23,19 @@ export default ${args}
 `
 
 let exportFile = `export {default} from './${args}'`
-fse.outputFile(`src/${args}/${args}.js`,template, err => {
+fse.outputFile(`src/Components/${args}/${args}.js`,template, err => {
     if(err) {
       console.log(err);
     }
   })
 
-  fse.outputFile(`src/${args}/${args}.css`,'', err => {
+  fse.outputFile(`src/Components/${args}/${args}.css`,' ', err => {
     if(err) {
       console.log(err);
     }
   })
 
-  fse.outputFile(`src/${args}/index.js`,exportFile, err => {
+  fse.outputFile(`src/Components/${args}/index.js`,exportFile, err => {
     if(err) {
       console.log(err);
     }
