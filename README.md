@@ -13,16 +13,11 @@ rcli-tools is a basic cli to generate a react component stateless or statefull
 * -f : statefull
 * -l : stateless
 
-<<<<<<< HEAD
-#### Exemple 1: create a component stateless 
-    * -cp : place your component  in "src/**components**/Button"
-=======
 For exemple you can place your Component in **MyPackages** folder
 
 `rcli MyPackages -f Button`
 
 #### create a component stateless 
->>>>>>> eb0446abf409ff0c8d76a2e8c2dd1036dd19c673
 `rcli -cp -l Button`
 
 #### create a component statefull 
@@ -48,5 +43,4 @@ For exemple you can place your Component in **MyPackages** folder
 
 #### index.js
     export {default} from "./Button"
- 
  
