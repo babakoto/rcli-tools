@@ -23,8 +23,23 @@ rcli-tools
 ## Exemple 3: create Container statefull "Name = Home" 
 `rcli -ct -f Home`
 
-![component_button](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.PNG)
-
 ## Exemple 4: create Component "Button" in Directory "MyPackages"
 `rcli MyPackages -f Button`
 
+![component_button](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.PNG)
+
+# Button.js 
+  import React, { Component } from 'react'
+  import './Button.css'
+
+    class Button extends Component {
+    render() {
+      return (
+        <div>
+          Button
+        </div>
+      )
+   }
+  }
+  export default Button
+    
