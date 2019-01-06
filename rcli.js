@@ -72,7 +72,7 @@ let template = (dir,state)=>{
         console.log(err);
       }
     })
-    console.log(`${args[2]} created !!!`)
+    console.log("\x1b[42m",`${args[2]} created !!!`)
   }else{
     fse.outputFile(`src/${args[0]}/${args[2]}/${args[2]}.js`,state, err => {
       if(err) {
