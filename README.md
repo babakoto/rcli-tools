@@ -1,7 +1,13 @@
 rcli-tools
 
-Install:
+### Install:
 `npm i rcli-tools -g`
 
-###Create Component
-`rcli -c -f NameComponent`
+### Create Components 
+`rcli -cp -f Facebook`
+
+* -cp : components
+* -ct : containers
+* -f : statefull
+* -l : stateless
+
