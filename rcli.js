@@ -67,7 +67,7 @@ let template = (dir,state)=>{
       }
     })
   
-    fse.outputFile(`src/containers/${args[2]}/index.js`, state, err => {
+    fse.outputFile(`src/containers/${args[2]}/index.js`,exportDefault , err => {
       if(err) {
         console.log(err);
       }
@@ -87,7 +87,7 @@ let template = (dir,state)=>{
       }
     })
   // create index.js
-    fse.outputFile(`src/${args[0]}/${args[2]}/index.js`, state, err => {
+    fse.outputFile(`src/${args[0]}/${args[2]}/index.js`, exportDefault, err => {
       if(err) {
         console.log(err);
       }
