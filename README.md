@@ -3,8 +3,6 @@ rcli-tools
 ### Install:
 `npm i rcli-tools -g`
 
-## Stru
-
 ### Command 
 * -cp : components
 * -ct : containers
@@ -13,6 +11,9 @@ rcli-tools
 
 ## Exemple 1: create Component stateless "Name = Button" 
 `npm -cp -l Button`
+
+## Structure
+![component_button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
 
 ## Exemple 2: create Component statefull "Name = Button" 
 `npm -cp -f Button`
