@@ -29,18 +29,17 @@ rcli-tools
 ![component_button](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.PNG)
 
 # Button.js 
-
-  import React, { Component } from 'react'
-  import './Button.css'
-
+    import React, { Component } from 'react'
+    import './Button.css'
+    
     class Button extends Component {
-    render() {
-      return (
-        <div>
-          Button
-        </div>
-      )
-   }
-  }
-  export default Button
+        render() {
+            return (
+               <div>
+                  Button
+               </div>
+        )
+      }
+    }
+    export default Button
     
