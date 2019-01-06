@@ -47,7 +47,7 @@ let template = (dir,state)=>{
       }
     })
   
-    fse.outputFile(`src/components/${args[2]}/index.js`, state, err => {
+    fse.outputFile(`src/components/${args[2]}/index.js`,exportDefault, err => {
       if(err) {
         console.log(err);
       }
