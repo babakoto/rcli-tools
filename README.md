@@ -15,10 +15,10 @@ You can place your Component in **MyPackages**
 
 `rcli MyPackages -f Button`
 
-#### Exemple 1: create a component stateless 
+#### create a component stateless 
 `rcli -cp -l Button`
 
-#### Exemple 2: create a component statefull 
+#### create a component statefull 
 `rcli -cp -f Button`
 
 ![button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
