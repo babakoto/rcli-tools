@@ -9,21 +9,21 @@ rcli-tools
 * -f : statefull
 * -l : stateless
 
-## Exemple 1: create Component stateless "Name = Button" 
+## Exemple 1: create Component stateless "Name = Button" in directory "components"
 `rcli -cp -l Button`
 
-## Exemple 2: create Component statefull "Name = Button" 
+## Exemple 2: create Component statefull "Name = Button" in directory "components"
 `rcli -cp -f Button`
 
-![component_button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
+![component_button](https://github.com/babakoto/rcli-tools/blob/master/button.png)
 
-## Exemple 3: create Container statefull "Name = Home" 
+## Exemple 3: create Component statefull "Name = Home" in Directory "containers"
 `rcli -ct -f Home`
 
 ## Exemple 4: create Component "Button" in Directory "MyPackages"
 `rcli MyPackages -f Button`
 
-![component_button](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.PNG)
+![component_button](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.png)
 
 # Button.js 
     import React, { Component } from 'react'
