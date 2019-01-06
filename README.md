@@ -4,32 +4,24 @@ rcli-tools
 `npm i rcli-tools -g`
 
 ### Command 
-* -cp : components
-* -ct : containers
+`rcli -cp -f [componentName]`
+
+* -cp : place your component in src/**components**/[componentName]"
+* -ct : place your component in src/**containers**/[componentName]"
 * -f : statefull
 * -l : stateless
 
-#### Exemple 1: create a component stateless 
-* -cp : place your component in src/**components**/Button"
+You can place your Component in **MyPackages**
 
+`rcli MyPackages -f Button`
+
+#### Exemple 1: create a component stateless 
 `rcli -cp -l Button`
 
 #### Exemple 2: create a component statefull 
-* -cp : place your component in src/**components**/Button"
-
 `rcli -cp -f Button`
 
 ![button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
-
-#### Exemple 3: create a container 
-* -ct : place your component in "src/**containers**/Home"
-
-`rcli -ct -f Home`
-
-#### Exemple 4: create a component *Button* in the *MyPackages* folder 
-`rcli MyPackages -f Button`
-
-![test](https://github.com/babakoto/rcli-tools/blob/master/buttonInPack.PNG)
 
 ### Button.js 
     import React, { Component } from 'react'
