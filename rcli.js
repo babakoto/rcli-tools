@@ -74,18 +74,19 @@ let template = (dir,state)=>{
     })
     console.log("\x1b[42m",`${args[2]} created !!!`)
   }else{
+    // create Component.js
     fse.outputFile(`src/${args[0]}/${args[2]}/${args[2]}.js`,state, err => {
       if(err) {
         console.log(err);
       }
     })
-  
+  // create Component.css
     fse.outputFile(`src/${args[0]}/${args[2]}/${args[2]}.css`,' ', err => {
       if(err) {
         console.log(err);
       }
     })
-  
+  // create index.js
     fse.outputFile(`src/${args[0]}/${args[2]}/index.js`, state, err => {
       if(err) {
         console.log(err);
