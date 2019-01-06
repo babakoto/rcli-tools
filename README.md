@@ -10,7 +10,8 @@ rcli-tools
 * -l : stateless
 
 #### Exemple 1: create a component stateless 
-*-cp : place your component in src/\<span style="color:blue">**components**</span>/Button"
+* -cp : place your component in src/**components**/Button"
+
 `rcli -cp -l Button`
 
 #### Exemple 2: create a component statefull 
