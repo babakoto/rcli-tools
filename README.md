@@ -3,11 +3,23 @@ rcli-tools
 ### Install:
 `npm i rcli-tools -g`
 
-### Create Components 
-`rcli -cp -f Facebook`
-
+### Command 
 * -cp : components
 * -ct : containers
 * -f : statefull
 * -l : stateless
 
+## Exemple 1: create Component stateless "Name = Button" 
+`rcli -cp -l Button`
+
+## Structure
+![component_button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
+
+## Exemple 2: create Component statefull "Name = Button" 
+`rcli -cp -f Button`
+
+## Exemple 3: create Container statefull "Name = Home" 
+`rcli -ct -f Home`
+
+## Exemple 4: create Component "Button" in Directory "MyPackages"
+`rcli MyPackages -f Button`
