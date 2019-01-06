@@ -12,9 +12,6 @@ rcli-tools
 ## Exemple 1: create Component stateless "Name = Button" 
 `rcli -cp -l Button`
 
-## Structure
-
-
 ## Exemple 2: create Component statefull "Name = Button" 
 `rcli -cp -f Button`
 
@@ -43,3 +40,8 @@ rcli-tools
     }
     export default Button
     
+
+# index.js
+    export {default} from "./Button"
+ 
+ 
