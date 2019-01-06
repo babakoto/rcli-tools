@@ -1,4 +1,4 @@
 rcli-tools
 
-__commande ___:
-rcli
+Install:
+`npm i rcli-tools -g`
