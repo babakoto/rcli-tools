@@ -15,12 +15,14 @@ rcli-tools
 
 #### Exemple 2: create a component statefull 
 * -cp : place your component in src/**components**/Button"
+
 `rcli -cp -f Button`
 
 ![button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
 
 #### Exemple 3: create a container 
 * -ct : place your component in "src/**containers**/Home"
+
 `rcli -ct -f Home`
 
 #### Exemple 4: create a component *Button* in the *MyPackages* folder 
