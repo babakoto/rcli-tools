@@ -14,7 +14,7 @@ rcli-tools
 `rcli -cp -l Button`
 
 #### Exemple 2: create a component statefull 
-    * -cp : place your component in "src/ **components**/Button"
+    * -cp : place your component in "src/\**components**/Button"
 `rcli -cp -f Button`
 
 ![button](https://github.com/babakoto/rcli-tools/blob/master/button.PNG)
