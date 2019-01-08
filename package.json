@@ -1,6 +1,6 @@
 {
   "name": "rcli-tools",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "create component react ",
   "main": "rcli.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "author": "Andriamiandrisoa Tokiniaina Eddy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/babakoto/rcli/issues"
+    "url": "https://github.com/babakoto/rcli/issues",
+    "email": "e.tokiniaina@gmail.com"
   },
   "homepage": "https://github.com/babakoto/rcli#readme",
   "bin": {
@@ -21,5 +22,14 @@
   },
   "dependencies": {
     "fs-extra": "^7.0.1"
-  }
+  },
+  "keywords": [
+    "rcli-tools",
+    "react-tools",
+    "rcli",
+    "cli-react",
+    "generate component react",
+    "react component",
+    "cli-react"
+  ]
 }
